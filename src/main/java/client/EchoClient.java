@@ -1,4 +1,4 @@
-package main.java;
+package main.java.client;
 
 
 import java.io.PrintWriter;
@@ -11,7 +11,7 @@ public class EchoClient {
             System.err.println("Usage: pass server IP as sole argument (e.g. 'localhost')");
             return;
         }
-        try (var socket = new Socket(args[0], 59898)) {
+        try (var socket = new Socket(args[0], 5000)) {
             System.out.println("Enter lines of text then Ctrl+D or Ctrl+C to quit");
             var scanner = new Scanner(System.in);
             var in = new Scanner(socket.getInputStream());
