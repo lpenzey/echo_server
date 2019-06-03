@@ -21,7 +21,7 @@ $ cd src
 ```
 Then run the following command to compile and run the echo server
 ```
-javac main/java/EchoServer.java && java main/java/EchoServer
+javac main/java/server/EchoServer.java && java main/java/server/EchoServer
 ```
 2. Connect to server: In a new terminal window, cd into the project directory:
 ```
@@ -33,6 +33,6 @@ $ cd src
 ```
 Then run the following command to compile and run the echo client
 ```
-$ javac main/java/EchoClient.java && java main/java/EchoClient localhost
+$ javac main/java/client/EchoClient.java && java main/java/client/EchoClient localhost
 ```
 3. Type your request in the client terminal window and receive the request back from the server.
